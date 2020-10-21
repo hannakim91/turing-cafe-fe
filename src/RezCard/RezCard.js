@@ -1,8 +1,10 @@
 import React from "react";
 
-function RezCard() {
+function RezCard({ id, name, date, time, number}) {
   return (
-
+    <article>
+      <h3></h3>
+    </article>
   )
 }
 

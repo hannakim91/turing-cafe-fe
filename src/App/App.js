@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RezContainer from '../RezContainer/RezContainer';
 import './App.css';
+import { getReservations } from './apiCalls';
 
 class App extends Component {
   constructor() {

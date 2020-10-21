@@ -13,6 +13,10 @@ class NewRezForm extends Component {
   updateValue = e => {
     this.setState({[e.target.name]: e.target.value})
   }
+  updateNumber = e => {
+    const numGuests = parseInt(e.target.value)
+    this.setState({number: numGuests})
+  }
   render() {
     return(
       <form>
@@ -39,10 +43,9 @@ class NewRezForm extends Component {
         ></input>
         <input
           onChange={this.updateNumber}
-          type="number of guests"
+          type="number"
           min="1"
           max="12"
-          value={this.state.number}
           required="required"
         ></input>
         

@@ -25,7 +25,7 @@ class NewRezForm extends Component {
   }
   render() {
     return(
-      <form>
+      <form onSubmit={this.submitRez}>
         <input
           placeholder="name"
           name="name"
@@ -57,7 +57,7 @@ class NewRezForm extends Component {
           max="12"
           required="required"
         ></input>
-        <button onClick={this.submitRez}>Add Reservation</button>
+        <button type="submit">Add Reservation</button>
         
       </form>
     )

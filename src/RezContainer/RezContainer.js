@@ -1,7 +1,8 @@
 import React from "react";
 import RezCard from "../RezCard/RezCard";
 
-function RezContainer() {
+function RezContainer({ reservations }) {
+
   return (
     <>
     THIS IS REZCONTAINER

@@ -7,8 +7,11 @@ class NewRezForm extends Component {
       name: "",
       date: "",
       time: "",
-      number: ""
+      number: 1
     }
+  }
+  updateValue = e => {
+    this.setState({[e.target.name]: e.target.value})
   }
   render() {
     return(
@@ -35,7 +38,7 @@ class NewRezForm extends Component {
           value={this.state.time}
         ></input>
         <input
-          onChange={this.updateValue}
+          onChange={this.updateNumber}
           type="number of guests"
           min="1"
           max="12"

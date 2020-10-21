@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import RezContainer from "../RezContainer/RezContainer";
-import "./App.css";
+import NewRezForm from "../NewRezForm/NewRezForm";
 import { getReservations } from "../apiCalls";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -25,11 +26,8 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="app-title">Turing Cafe Reservations</h1>
-        <div className="resy-form">
-
-        </div>
-        <RezContainer reservations={this.state.reservations} />
-          
+        <NewRezForm />
+        <RezContainer reservations={this.state.reservations} />       
       </div>
     )
   }

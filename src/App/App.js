@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RezContainer from '../RezContainer/RezContainer';
 import './App.css';
-import { getReservations } from './apiCalls';
+import { getReservations } from '../apiCalls';
 
 class App extends Component {
   constructor() {
@@ -9,6 +9,11 @@ class App extends Component {
     this.state = {
       reservations: []
     }
+  }
+
+  async componentDidMount() {
+    const reservations = await getReservations()
+    this.setState({reservations})
   }
 
   render() {

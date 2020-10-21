@@ -22,11 +22,14 @@ class App extends Component {
     }
   }
 
+  addNewRez = newRez => {
+    this.setState({ reservations: [...this.state.reservations, newRez]})
+  }
   render() {
     return (
       <div className="App">
         <h1 className="app-title">Turing Cafe Reservations</h1>
-        <NewRezForm />
+        <NewRezForm addNewRez={this.addNewRez}/>
         <RezContainer reservations={this.state.reservations} />       
       </div>
     )

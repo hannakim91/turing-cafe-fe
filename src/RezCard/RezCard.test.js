@@ -17,7 +17,7 @@ describe("Reservation Card Card", () => {
         number={5}
       />
     )
-    screen.debug()
+    
     expect(screen.getByText("Reservation for Namey Name:")).toBeInTheDocument();
     expect(screen.getByText("10/10 - 10:10")).toBeInTheDocument();
     expect(screen.getByText("Party of 5")).toBeInTheDocument();

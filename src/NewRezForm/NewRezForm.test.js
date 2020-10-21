@@ -12,6 +12,8 @@ describe("New Reservation Form", () => {
 
     expect(screen.getByPlaceholderText("name")).toBeInTheDocument();
     expect(screen.getByPlaceholderText("date (MM/DD)")).toBeInTheDocument();
+    expect(screen.getByPlaceholderText("time (MM:SS)")).toBeInTheDocument();
+    expect(screen.getByPlaceholderText("Number of guests")).toBeInTheDocument();
     expect(screen.getByRole("button", {name: "Add Reservation"})).toBeInTheDocument();
   })
 })

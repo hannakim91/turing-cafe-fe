@@ -52,6 +52,7 @@ class NewRezForm extends Component {
         ></input>
         <input
           onChange={this.updateNumber}
+          placeholder="Number of guests"
           type="number"
           min="1"
           max="12"

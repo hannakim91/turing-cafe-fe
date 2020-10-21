@@ -26,6 +26,7 @@ class NewRezForm extends Component {
           type="text"
           onChange={this.updateValue}
           value={this.state.name}
+          required="required"
         ></input>
         <input
           placeholder="date (MM/DD)"
@@ -33,6 +34,7 @@ class NewRezForm extends Component {
           type="text"
           onChange={this.updateValue}
           value={this.state.date}
+          required="required"
         ></input>
         <input
           placeholder="time (MM:SS)"
@@ -40,6 +42,7 @@ class NewRezForm extends Component {
           type="text"
           onChange={this.updateValue}
           value={this.state.time}
+          required="required"
         ></input>
         <input
           onChange={this.updateNumber}
@@ -48,6 +51,7 @@ class NewRezForm extends Component {
           max="12"
           required="required"
         ></input>
+        <button></button>
         
       </form>
     )

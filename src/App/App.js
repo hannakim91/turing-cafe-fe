@@ -13,8 +13,12 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const reservations = await getReservations()
-    this.setState({reservations})
+    try {
+      const reservations = await getReservations()
+      this.setState({reservations})
+    } catch (error) {
+      this.setState({error: error.message})
+    }
   }
 
   render() {

@@ -22,7 +22,7 @@ describe("App", () => {
     userEvent.type(screen.getByPlaceholderText("time (MM:SS)"), "12:34")
     userEvent.type(screen.getByPlaceholderText("Number of guests"), "10")
     userEvent.click(screen.getByRole("button", {name: "Add Reservation"}))
-    screen.debug()
+    expect(screen.getByText("Reservation for Ricky Bobby:")).toBeInTheDocument();
 
   })
 

@@ -15,3 +15,5 @@ describe("New Reservation Form", () => {
     expect(screen.getByRole("button", {name: "Add Reservation"})).toBeInTheDocument();
   })
 })
+//what property of input element gets modified when you type into it -- make an assertion about that property
+// do inputs change when typed in?

@@ -15,8 +15,10 @@ function RezContainer({ reservations }) {
   })
   return (
     <>
-    <h2>THIS IS REZCONTAINER</h2>
-      {RezCards}
+      <h2>THIS IS REZCONTAINER</h2>
+      <section className="rez-cards">
+        {RezCards}
+      </section>
     </>
   )
 }

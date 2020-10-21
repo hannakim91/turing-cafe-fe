@@ -17,6 +17,9 @@ class NewRezForm extends Component {
     const numGuests = parseInt(e.target.value)
     this.setState({number: numGuests})
   }
+  addNewRez = e => {
+    e.preventDefault()
+  }
   render() {
     return(
       <form>
@@ -51,7 +54,7 @@ class NewRezForm extends Component {
           max="12"
           required="required"
         ></input>
-        <button></button>
+        <button onClick={this.addNewRez}>Add Reservation</button>
         
       </form>
     )

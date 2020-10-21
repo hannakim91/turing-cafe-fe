@@ -1,5 +1,5 @@
-import React from 'react';
-import RezCard from '../RezCard/RezCard';
+import React from "react";
+import RezCard from "../RezCard/RezCard";
 
 function RezContainer() {
   return (

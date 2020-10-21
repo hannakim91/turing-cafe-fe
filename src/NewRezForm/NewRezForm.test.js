@@ -5,6 +5,7 @@ import "@testing-library/jest-dom";
 import userEvent from "@testing-library/user-event";
 
 import NewRezForm from "./NewRezForm";
+
 describe("New Reservation Form", () => {
   it("Should render with inputs and a submit button", () => {
     render(<NewRezForm />);

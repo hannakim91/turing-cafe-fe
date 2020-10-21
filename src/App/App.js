@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RezContainer from '../RezContainer/RezContainer';
 import './App.css';
 
 class App extends Component {
@@ -9,9 +10,8 @@ class App extends Component {
         <div className='resy-form'>
 
         </div>
-        <div className='resy-container'>
+        <RezContainer />
           
-        </div>
       </div>
     )
   }
